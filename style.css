@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* height: 100vh; */
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  /* width: 100vw; */
+  height: 80vh;
+}
+
+.main-content {
+  padding: 5vh;
+}
+
+.footer {
+  background-color: #696969;
+  height: 20vh;
+}
+
+.footer ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20vw;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #eee;
+  align-items: center;
+  list-style: none;
+
+}
+
+.footer li {
+}
+
+.main-content__intro p, .main-content__post p {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-align: justify;
+  color: #696969;
+}
+.main-content__intro .subtitle, .main-content__post .subtitle {
+  margin: 1rem 0 2rem;
+  font-weight: 700;
+}
+
+.main-content__post .post-title {
+  margin-top: 2rem;
+  border-top: 1px solid #69696920;
+  padding-top: 2rem;
+}
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.main-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container .controls button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.container .controls .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container .controls .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
